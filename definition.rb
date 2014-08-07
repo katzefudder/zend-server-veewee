@@ -33,6 +33,7 @@ Veewee::Session.declare({
   :postinstall_files => [
    "build_time.sh",
    "apt.sh",
+   "apache.sh",
    "sudo.sh",
    "php.sh",
    "vagrant.sh",
