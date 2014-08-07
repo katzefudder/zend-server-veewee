@@ -1,6 +1,6 @@
 Veewee::Session.declare({
-  :cpu_count => '4',
-  :memory_size => '2048',
+  :cpu_count => '2',
+  :memory_size => '1024',
   :disk_size => '65536',
   :disk_format => 'VDI',
   :hostiocache => 'off',
@@ -34,12 +34,9 @@ Veewee::Session.declare({
    "build_time.sh",
    "apt.sh",
    "sudo.sh",
-   "zend_server.sh",
-   "apache.sh",
    "php.sh",
    "vagrant.sh",
    "ruby.sh",
-   "mailcatcher.sh",
    "chef.sh",
    "vbox.sh",
    "cleanup.sh"

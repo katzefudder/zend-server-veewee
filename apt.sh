@@ -15,16 +15,22 @@ apt-get -y install curl
 apt-get -y install man-db
 apt-get -y install mcrypt
 apt-get -y install htop
-apt-get -y install libsqlite3-dev
-
-echo postfix postfix/main_mailer_type select Internet Site | debconf-set-selections
-echo postfix postfix/mailname string localhost | debconf-set-selections
-echo postfix postfix/destinations string localhost.localdomain, localhost | debconf-set-selections
-apt-get -y install postfix
-
 apt-get -y install graphicsmagick
-apt-get -y install graphicsmagick-imagemagick-compat
 apt-get -y install ghostscript
 echo mysql-server mysql-server/root_password select admin | debconf-set-selections
 echo mysql-server mysql-server/root_password_again select admin | debconf-set-selections
 apt-get -y install mysql-server
+apt-get -y install php5
+apt-get -y install php5-mcrypt
+apt-get -y install php5-apc
+apt-get -y install php5-curl
+apt-get -y install php5-gd
+apt-get -y install php5-mysql
+apt-get -y install php5-sqlite3
+apt-get -y install apache2
+
+## zend server
+#echo "deb http://repos.zend.com/zend-server/6.1/deb server non-free" >> /etc/apt/sources.list
+#wget http://repos.zend.com/zend.key -O- |apt-key add -
+#aptitude update
+#aptitude install zend-server-php-5.4 -y
